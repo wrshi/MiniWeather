@@ -18,19 +18,19 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="90º" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Smg-L6-WVN">
-                                <rect key="frame" x="180" y="206" width="241" height="188"/>
+                                <rect key="frame" x="180" y="166" width="241" height="188"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="161"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HUMIDITY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRj-a4-vBx">
-                                <rect key="frame" x="194" y="400" width="81" height="20"/>
+                                <rect key="frame" x="194" y="360" width="81" height="20"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RAIN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91x-MY-c3T">
-                                <rect key="frame" x="345" y="400" width="39.5" height="20"/>
+                                <rect key="frame" x="345" y="360" width="39.5" height="20"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -50,7 +50,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.29019607843137252" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="Smg-L6-WVN" secondAttribute="centerY" id="75P-q2-3ig"/>
+                            <constraint firstAttribute="centerY" secondItem="Smg-L6-WVN" secondAttribute="centerY" constant="40" id="75P-q2-3ig"/>
                             <constraint firstAttribute="centerX" secondItem="91x-MY-c3T" secondAttribute="centerX" constant="65" id="9Ap-Gs-Gkv"/>
                             <constraint firstItem="91x-MY-c3T" firstAttribute="centerX" secondItem="iDx-mp-hyt" secondAttribute="centerX" constant="-1.75" id="OSK-ot-rq1"/>
                             <constraint firstItem="KRj-a4-vBx" firstAttribute="top" secondItem="Smg-L6-WVN" secondAttribute="bottom" constant="6" id="QL9-GI-Jbl"/>
@@ -73,7 +73,7 @@
                     <connections>
                         <outlet property="currentHumidityLabel" destination="CeV-JU-919" id="gxc-uD-RVE"/>
                         <outlet property="currentPrecipitationLabel" destination="iDx-mp-hyt" id="dFx-QT-WKs"/>
-                        <outlet property="currentTemperatureLabel" destination="Smg-L6-WVN" id="q56-kf-vNl"/>
+                        <outlet property="currentTemperatureLabel" destination="Smg-L6-WVN" id="AO0-si-DQC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
