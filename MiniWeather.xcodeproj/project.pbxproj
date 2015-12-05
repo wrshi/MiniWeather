@@ -13,6 +13,8 @@
 		7F85B25D1C11518700EE41ED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F85B25C1C11518700EE41ED /* Images.xcassets */; };
 		7F85B2601C11518700EE41ED /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F85B25E1C11518700EE41ED /* LaunchScreen.xib */; };
 		7F85B26C1C11518700EE41ED /* MiniWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F85B26B1C11518700EE41ED /* MiniWeatherTests.swift */; };
+		7F85B2761C1151A800EE41ED /* CurrentWeather.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F85B2751C1151A800EE41ED /* CurrentWeather.plist */; };
+		7F85B2781C11529D00EE41ED /* SWRCurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F85B2771C11529D00EE41ED /* SWRCurrentWeather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		7F85B2651C11518700EE41ED /* MiniWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F85B26A1C11518700EE41ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F85B26B1C11518700EE41ED /* MiniWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniWeatherTests.swift; sourceTree = "<group>"; };
+		7F85B2751C1151A800EE41ED /* CurrentWeather.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CurrentWeather.plist; sourceTree = "<group>"; };
+		7F85B2771C11529D00EE41ED /* SWRCurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWRCurrentWeather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 			children = (
 				7F85B2551C11518700EE41ED /* AppDelegate.swift */,
 				7F85B2571C11518700EE41ED /* ViewController.swift */,
+				7F85B2771C11529D00EE41ED /* SWRCurrentWeather.swift */,
 				7F85B2591C11518700EE41ED /* Main.storyboard */,
 				7F85B25C1C11518700EE41ED /* Images.xcassets */,
 				7F85B25E1C11518700EE41ED /* LaunchScreen.xib */,
@@ -90,6 +95,7 @@
 		7F85B2531C11518700EE41ED /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7F85B2751C1151A800EE41ED /* CurrentWeather.plist */,
 				7F85B2541C11518700EE41ED /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -193,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F85B25B1C11518700EE41ED /* Main.storyboard in Resources */,
+				7F85B2761C1151A800EE41ED /* CurrentWeather.plist in Resources */,
 				7F85B2601C11518700EE41ED /* LaunchScreen.xib in Resources */,
 				7F85B25D1C11518700EE41ED /* Images.xcassets in Resources */,
 			);
@@ -213,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F85B2581C11518700EE41ED /* ViewController.swift in Sources */,
+				7F85B2781C11529D00EE41ED /* SWRCurrentWeather.swift in Sources */,
 				7F85B2561C11518700EE41ED /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,8 +349,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MiniWeather/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -351,8 +361,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MiniWeather/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -409,6 +421,7 @@
 				7F85B2711C11518700EE41ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7F85B2721C11518700EE41ED /* Build configuration list for PBXNativeTarget "MiniWeatherTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +430,7 @@
 				7F85B2741C11518700EE41ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
