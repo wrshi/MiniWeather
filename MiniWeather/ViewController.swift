@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var currentPrecipitationLabel: UILabel?
     @IBOutlet weak var currentWeatherIcon: UIImageView?
     @IBOutlet weak var currentWeatherSummaryLabel: UILabel?
+    @IBOutlet weak var refreshIndicator: UIActivityIndicatorView?
+    @IBOutlet weak var refreshButton: UIButton?
     
     private var forecasetAPIKey = "f39f20bdd77fd8248519dc16198cce41"
     let coordinate: (lat: Double, long: Double) = (37.8267, -122.423)
@@ -22,7 +24,16 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        retriveWeatherForecast()
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    func retriveWeatherForecast() {
         let forecastService = SWRForecastService(APIKey: forecasetAPIKey)
         forecastService.getForecast(coordinate.lat, long: coordinate.long){
             (let currently) in
@@ -46,19 +57,33 @@ class ViewController: UIViewController {
                     if let summary = currentWeather.summary {
                         self.currentWeatherSummaryLabel?.text = summary
                     }
+                    self.toggleRefreshAnimation(false)
                 })
-
+                
             }
         }
-        
-        
-        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent;
     }
+    
+    
+    @IBAction func refreshWeather(sender: AnyObject) {
+        retriveWeatherForecast()
+        toggleRefreshAnimation(true)
+    }
+    
+    func toggleRefreshAnimation(on: Bool) {
+        refreshButton?.hidden = on
+        if on {
+            refreshIndicator?.startAnimating()
+        }
+        else {
+            refreshIndicator?.stopAnimating()
+        }
+    }
+    
 
 
 }

@@ -85,15 +85,15 @@
 		7F85B2521C11518700EE41ED /* MiniWeather */ = {
 			isa = PBXGroup;
 			children = (
+				7F85B2591C11518700EE41ED /* Main.storyboard */,
 				7F85B2551C11518700EE41ED /* AppDelegate.swift */,
 				7F85B2571C11518700EE41ED /* ViewController.swift */,
 				7F85B2771C11529D00EE41ED /* SWRCurrentWeather.swift */,
-				7F85B2591C11518700EE41ED /* Main.storyboard */,
+				7FB124551C136FE000D22D6E /* SWRNetworkOperation.swift */,
+				7FB124571C13743A00D22D6E /* SWRForecastService.swift */,
 				7F85B25C1C11518700EE41ED /* Images.xcassets */,
 				7F85B25E1C11518700EE41ED /* LaunchScreen.xib */,
 				7F85B2531C11518700EE41ED /* Supporting Files */,
-				7FB124551C136FE000D22D6E /* SWRNetworkOperation.swift */,
-				7FB124571C13743A00D22D6E /* SWRForecastService.swift */,
 			);
 			path = MiniWeather;
 			sourceTree = "<group>";

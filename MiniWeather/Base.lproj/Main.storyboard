@@ -60,38 +60,65 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summary" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQf-ni-aLK">
-                                <rect key="frame" x="253.5" y="501" width="94.5" height="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Summary" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQf-ni-aLK">
+                                <rect key="frame" x="253" y="461" width="94.5" height="26"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCD-6q-Q9L">
+                                <rect key="frame" x="260" y="37" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="k2H-F8-DJs"/>
+                                    <constraint firstAttribute="width" constant="70" id="kLD-kM-15D"/>
+                                </constraints>
+                                <state key="normal" image="refresh">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="refreshWeather:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5jJ-dp-7an"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="ZTX-SB-Weo">
+                                <rect key="frame" x="290" y="67" width="20" height="30"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.29019607843137252" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="p3x-p1-3e3" firstAttribute="top" relation="greaterThanOrEqual" secondItem="eCD-6q-Q9L" secondAttribute="bottom" constant="5" id="1g1-qo-JO3"/>
+                            <constraint firstAttribute="centerX" secondItem="eCD-6q-Q9L" secondAttribute="centerX" id="32g-1b-GRY"/>
                             <constraint firstItem="Smg-L6-WVN" firstAttribute="top" secondItem="sRc-ml-Toh" secondAttribute="bottom" constant="-2" id="4RE-3h-fJ0"/>
                             <constraint firstAttribute="centerX" secondItem="sRc-ml-Toh" secondAttribute="centerX" constant="80" id="4qX-Ka-Ql2"/>
                             <constraint firstAttribute="centerY" secondItem="Smg-L6-WVN" secondAttribute="centerY" constant="40" id="75P-q2-3ig"/>
                             <constraint firstAttribute="centerX" secondItem="91x-MY-c3T" secondAttribute="centerX" constant="65" id="9Ap-Gs-Gkv"/>
+                            <constraint firstItem="ZTX-SB-Weo" firstAttribute="centerY" secondItem="eCD-6q-Q9L" secondAttribute="centerY" id="FqA-cO-cg6"/>
+                            <constraint firstItem="ZTX-SB-Weo" firstAttribute="centerX" secondItem="eCD-6q-Q9L" secondAttribute="centerX" id="MD0-ab-aqF"/>
                             <constraint firstItem="Smg-L6-WVN" firstAttribute="top" secondItem="p3x-p1-3e3" secondAttribute="bottom" constant="19" id="Mtt-gX-KsK"/>
                             <constraint firstItem="91x-MY-c3T" firstAttribute="centerX" secondItem="iDx-mp-hyt" secondAttribute="centerX" constant="-1.75" id="OSK-ot-rq1"/>
                             <constraint firstItem="KRj-a4-vBx" firstAttribute="top" secondItem="Smg-L6-WVN" secondAttribute="bottom" constant="6" id="QL9-GI-Jbl"/>
                             <constraint firstItem="KRj-a4-vBx" firstAttribute="centerX" secondItem="CeV-JU-919" secondAttribute="centerX" constant="-7" id="RfI-Q2-ceq"/>
+                            <constraint firstItem="eCD-6q-Q9L" firstAttribute="top" relation="lessThanOrEqual" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="40" id="TSi-dW-Pit"/>
+                            <constraint firstItem="uQf-ni-aLK" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Smg-L6-WVN" secondAttribute="bottom" constant="70" id="V5Q-Od-rth"/>
                             <constraint firstAttribute="centerX" secondItem="KRj-a4-vBx" secondAttribute="centerX" constant="65" id="VeW-BE-jBA"/>
                             <constraint firstItem="CeV-JU-919" firstAttribute="top" secondItem="KRj-a4-vBx" secondAttribute="bottom" constant="9" id="XTM-jI-bbt"/>
                             <constraint firstItem="p3x-p1-3e3" firstAttribute="leading" secondItem="sRc-ml-Toh" secondAttribute="trailing" constant="8" id="XyN-y1-lPV"/>
                             <constraint firstAttribute="centerX" secondItem="91x-MY-c3T" secondAttribute="centerX" constant="-65" id="YZC-lA-JjN"/>
                             <constraint firstItem="iDx-mp-hyt" firstAttribute="top" secondItem="91x-MY-c3T" secondAttribute="bottom" constant="9" id="aLc-JL-7KP"/>
+                            <constraint firstItem="ZTX-SB-Weo" firstAttribute="centerX" secondItem="eCD-6q-Q9L" secondAttribute="centerX" id="f2S-a4-vk7"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="uQf-ni-aLK" secondAttribute="bottom" priority="900" constant="150" id="nth-O1-NRI"/>
                             <constraint firstAttribute="centerX" secondItem="Smg-L6-WVN" secondAttribute="centerX" id="pPw-R8-GGt">
                                 <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
                             </constraint>
+                            <constraint firstItem="ZTX-SB-Weo" firstAttribute="top" secondItem="eCD-6q-Q9L" secondAttribute="bottom" constant="-50" id="qt3-bd-pg2"/>
                             <constraint firstItem="91x-MY-c3T" firstAttribute="top" secondItem="Smg-L6-WVN" secondAttribute="bottom" constant="6" id="uzR-Lx-cWM"/>
                             <constraint firstAttribute="centerX" secondItem="uQf-ni-aLK" secondAttribute="centerX" id="vOQ-8p-a1G"/>
-                            <constraint firstItem="uQf-ni-aLK" firstAttribute="top" secondItem="Smg-L6-WVN" secondAttribute="bottom" constant="146" id="vvk-p2-vTs"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="MD0-ab-aqF"/>
+                                <exclude reference="qt3-bd-pg2"/>
                                 <exclude reference="9Ap-Gs-Gkv"/>
+                                <exclude reference="V5Q-Od-rth"/>
                             </mask>
                         </variation>
                     </view>
@@ -101,6 +128,8 @@
                         <outlet property="currentTemperatureLabel" destination="Smg-L6-WVN" id="AO0-si-DQC"/>
                         <outlet property="currentWeatherIcon" destination="sRc-ml-Toh" id="Paa-V0-bea"/>
                         <outlet property="currentWeatherSummaryLabel" destination="uQf-ni-aLK" id="9C0-oL-ZIj"/>
+                        <outlet property="refreshButton" destination="eCD-6q-Q9L" id="7l5-fF-igR"/>
+                        <outlet property="refreshIndicator" destination="ZTX-SB-Weo" id="TYq-uK-Atu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -110,5 +139,6 @@
     </scenes>
     <resources>
         <image name="default" width="30" height="30"/>
+        <image name="refresh" width="43" height="43"/>
     </resources>
 </document>
