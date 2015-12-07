@@ -14,7 +14,6 @@ class SWRDailyCell: UITableViewCell {
     @IBOutlet weak var weatherIcon: UIImageView!
     @IBOutlet weak var dayLabel: UILabel!
     
-
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -25,5 +24,4 @@ class SWRDailyCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
 }

@@ -10,7 +10,7 @@
         <!--Weekly-->
         <scene sceneID="F0A-EF-awb">
             <objects>
-                <tableViewController id="YNU-24-osk" customClass="WeeklyTableTableViewController" customModule="MiniWeather" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="YNU-24-osk" customClass="SWRWeeklyTableTableViewController" customModule="MiniWeather" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="G22-3l-efh">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,7 +32,7 @@
                                         <constraint firstAttribute="width" constant="50" id="fJ1-mZ-KLA"/>
                                     </constraints>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alcatraz Island, CA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUa-0d-ibR">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vancouver, BC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUa-0d-ibR">
                                     <rect key="frame" x="253.5" y="110" width="93" height="14.5"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="14.5" id="y7J-Fm-uQG"/>
@@ -153,7 +153,7 @@
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="MiniWeather" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="SWRViewController" customModule="MiniWeather" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>

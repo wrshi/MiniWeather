@@ -63,7 +63,7 @@ struct SWRDailyWeather {
         
     }
     
-    
+
     func timeStringFromUnixTime(unixTime: Double) -> String {
         let date = NSDate(timeIntervalSince1970: unixTime)
         
@@ -77,6 +77,4 @@ struct SWRDailyWeather {
         dateFormatter.dateFormat = "EEEE"
         return dateFormatter.stringFromDate(date)
     }
-    
-    
 }

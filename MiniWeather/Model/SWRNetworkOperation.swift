@@ -32,7 +32,6 @@ class SWRNetworkOperation{
                     let jsonDictionary = NSJSONSerialization.JSONObjectWithData(data, options: nil, error: nil) as? [String : AnyObject]
                     completion(jsonDictionary)
                 default: println("GET request not successful. HTTP atatus code: \(httpResponse.statusCode)")
-                
                 }
             }
             else{
@@ -42,10 +41,3 @@ class SWRNetworkOperation{
         dataTask.resume()
     }
 }
-
-
-
-
-
-
-

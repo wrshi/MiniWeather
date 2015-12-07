@@ -27,23 +27,8 @@ struct SWRForecastService {
                 completion(forecast)
             }
         }
-        else{
+        else {
             println("Could not construct a valid URL")
         }
     }
-    
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

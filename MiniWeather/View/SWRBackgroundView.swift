@@ -8,8 +8,7 @@
 
 import UIKit
 
-class BackgroundView: UIView {
-
+class SWRBackgroundView: UIView {
     
     override func drawRect(rect: CGRect) {
         let lightPurple: UIColor = UIColor(red: 0.377, green: 0.075, blue: 0.778, alpha: 1.000)
@@ -30,6 +29,4 @@ class BackgroundView: UIView {
             UInt32(kCGGradientDrawsBeforeStartLocation) | UInt32(kCGGradientDrawsAfterEndLocation))
         CGContextRestoreGState(context)
     }
-
-
 }

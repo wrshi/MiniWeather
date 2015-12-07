@@ -50,5 +50,4 @@ class SWRDetailBackgoundView: UIView {
         sunPath.stroke()
         CGContextRestoreGState(context)
     }
-
 }

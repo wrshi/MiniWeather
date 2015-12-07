@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WeeklyTableTableViewController: UITableViewController {
+class SWRWeeklyTableTableViewController: UITableViewController {
     
     @IBOutlet weak var currentTemperatureLabel: UILabel?
     @IBOutlet weak var currentWeatherIcon: UIImageView?
@@ -16,8 +16,7 @@ class WeeklyTableTableViewController: UITableViewController {
     @IBOutlet weak var currentTemperatureRangeLabel: UILabel?
     
     private var forecasetAPIKey = "f39f20bdd77fd8248519dc16198cce41"
-    let coordinate: (lat: Double, long: Double) = (37.8267, -122.423)
-    
+    let coordinate: (lat: Double, long: Double) = (49.2497, -123.1193)
     var weeklyWeather: [SWRDailyWeather] = []
     
     
@@ -25,7 +24,6 @@ class WeeklyTableTableViewController: UITableViewController {
         super.viewDidLoad()
         configureView()
         retriveWeatherForecast()
-
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,7 +32,7 @@ class WeeklyTableTableViewController: UITableViewController {
     }
     
     func configureView() {
-        tableView.backgroundView = BackgroundView()
+        tableView.backgroundView = SWRBackgroundView()
         tableView.rowHeight = 64
         
         if let navBarFont = UIFont(name: "HelveticaNeue-Thin", size: 20.0){
@@ -60,11 +58,10 @@ class WeeklyTableTableViewController: UITableViewController {
         if segue.identifier == "showDaily" {
             if let indexPath = tableView.indexPathForSelectedRow() {
                 let dailyWeather = weeklyWeather[indexPath.row]
-                (segue.destinationViewController as! ViewController).dailyWeather = dailyWeather
+                (segue.destinationViewController as! SWRViewController).dailyWeather = dailyWeather
             }
         }
     }
-    
 
     // MARK: - Table view data source
 
@@ -81,7 +78,6 @@ class WeeklyTableTableViewController: UITableViewController {
 
         return self.weeklyWeather.count
     }
-
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! SWRDailyCell
@@ -152,6 +148,4 @@ class WeeklyTableTableViewController: UITableViewController {
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent;
     }
-
-
 }

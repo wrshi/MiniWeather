@@ -23,13 +23,13 @@ struct SWRCurrentWeather {
         if let humidityFloat = weatherDictionary["humidity"] as? Double{
             humidity = Int(humidityFloat * 100)
         }
-        else{
+        else {
             humidity = nil
         }
         if let precipProbabilityFloat = weatherDictionary["precipProbability"] as? Double{
              precipProbability = Int(precipProbabilityFloat * 100)
         }
-        else{
+        else {
             precipProbability = nil
         }
         summary = weatherDictionary["summary"] as? String
@@ -39,32 +39,4 @@ struct SWRCurrentWeather {
             (icon, _) = weatherIcon.toImage()
         }
     }
-    
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

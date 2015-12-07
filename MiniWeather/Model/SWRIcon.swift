@@ -45,8 +45,8 @@ enum SWRIcon: String {
             imageName = "cloudy-day"
         case .PartlyCloudyNight:
             imageName = "cloudy-night"
-            
         }
+        
         let regularIcon = UIImage(named: "\(imageName).png")
         let largeIcon = UIImage(named: "\(imageName)_large.png")
         return (regularIcon, largeIcon)

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SWRViewController: UIViewController {
     
     @IBOutlet weak var weatherIcon: UIImageView?
     @IBOutlet weak var sunriseLabel: UILabel?
@@ -28,7 +28,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         configureView()
     }
     
@@ -58,11 +57,6 @@ class ViewController: UIViewController {
             ]
             UIBarButtonItem.appearance().setTitleTextAttributes(barButtonAttributesDictionary, forState: .Normal)
         }
-        
-        // update UI
-        
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -73,9 +67,4 @@ class ViewController: UIViewController {
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent;
     }
-    
-
-
 }
-
-
