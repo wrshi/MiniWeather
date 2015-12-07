@@ -3,13 +3,15 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Weekly-->
         <scene sceneID="F0A-EF-awb">
             <objects>
                 <tableViewController id="YNU-24-osk" customClass="WeeklyTableTableViewController" customModule="MiniWeather" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="G22-3l-efh">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="G22-3l-efh">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -68,12 +70,59 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="eFT-hj-nGH">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="64" id="eFT-hj-nGH" customClass="SWRDailyCell" customModule="MiniWeather" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eFT-hj-nGH" id="iEV-T8-Elv">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="temperatureIconBG" translatesAutoresizingMaskIntoConstraints="NO" id="eLi-4a-r1P">
+                                            <rect key="frame" x="190.5" y="11" width="43" height="43"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="eLi-4a-r1P" secondAttribute="height" multiplier="1:1" id="FSg-jD-1nE"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="      " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTu-Yx-1Z2">
+                                            <rect key="frame" x="193" y="22" width="42" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="JSc-gW-Gl9"/>
+                                                <constraint firstAttribute="width" constant="42" id="wkS-wh-gs0"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                            <color key="textColor" red="0.074509803921568626" green="0.054901960784313725" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="           " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XB8-zE-mUm">
+                                            <rect key="frame" x="321" y="21" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="ysg-hE-7Qt">
+                                            <rect key="frame" x="258" y="12" width="40" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="G9H-Xi-miX"/>
+                                                <constraint firstAttribute="width" constant="40" id="Ggr-uz-vBe"/>
+                                                <constraint firstAttribute="width" secondItem="ysg-hE-7Qt" secondAttribute="height" multiplier="1:1" id="lUe-5b-SP8"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ZTu-Yx-1Z2" firstAttribute="top" secondItem="eLi-4a-r1P" secondAttribute="bottom" constant="-32" id="Ojw-IP-cFo"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="ysg-hE-7Qt" secondAttribute="bottom" constant="3.5" id="U7Z-Zx-Mxb"/>
+                                        <constraint firstAttribute="centerX" secondItem="ysg-hE-7Qt" secondAttribute="centerX" constant="22" id="US0-4t-tyK"/>
+                                        <constraint firstAttribute="centerX" secondItem="eLi-4a-r1P" secondAttribute="centerX" constant="88" id="cxn-Em-vEc"/>
+                                        <constraint firstItem="eLi-4a-r1P" firstAttribute="top" secondItem="iEV-T8-Elv" secondAttribute="topMargin" constant="3" id="hK0-7J-sRV"/>
+                                        <constraint firstAttribute="centerY" secondItem="XB8-zE-mUm" secondAttribute="centerY" id="jJR-bq-aoc"/>
+                                        <constraint firstItem="XB8-zE-mUm" firstAttribute="leading" secondItem="ysg-hE-7Qt" secondAttribute="trailing" constant="23" id="lab-V6-AWW"/>
+                                        <constraint firstItem="ysg-hE-7Qt" firstAttribute="top" secondItem="iEV-T8-Elv" secondAttribute="topMargin" constant="4" id="xTu-gf-943"/>
+                                        <constraint firstItem="ZTu-Yx-1Z2" firstAttribute="centerX" secondItem="eLi-4a-r1P" secondAttribute="centerX" constant="2" id="yyb-R6-jjA"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
+                                    <outlet property="dayLabel" destination="XB8-zE-mUm" id="eJX-4r-NKt"/>
+                                    <outlet property="temperatureLabel" destination="ZTu-Yx-1Z2" id="N5r-Ua-UJa"/>
+                                    <outlet property="weatherIcon" destination="ysg-hE-7Qt" id="4ZN-Yh-AnJ"/>
                                     <segue destination="vXZ-lx-hvc" kind="show" id="xqK-mM-fEH"/>
                                 </connections>
                             </tableViewCell>
@@ -84,6 +133,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Weekly" id="nKe-Go-oKM"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="qqO-Wx-tZq">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <action selector="refreshWeather:" destination="YNU-24-osk" eventType="valueChanged" id="4IC-1b-2ox"/>
+                        </connections>
+                    </refreshControl>
                     <connections>
                         <outlet property="currentPrecipitationLabel" destination="Z15-qr-Zu9" id="MgE-Kj-tRu"/>
                         <outlet property="currentTemperatureLabel" destination="apI-DI-b9f" id="ZW9-fD-gJD"/>
@@ -133,4 +188,8 @@
             <point key="canvasLocation" x="-619" y="232"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="default" width="30" height="30"/>
+        <image name="temperatureIconBG" width="42" height="43"/>
+    </resources>
 </document>
