@@ -4,7 +4,9 @@
 地点就先选择了本地Vancouver，坐标是直接写上去的。等过了期末再去研究怎么获得用户位置。   
 截图长这样（因为Raincouver一直都要下雨都没能展示别的可爱的图标╭(╯^╰)╮）：   
 
-![Screen Shot 2015-12-07 at 12.34.39 PM.png](http://upload-images.jianshu.io/upload_images/1285005-5f49be4a01550ea5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![Screen Shot 2015-12-07 at 12.34.57 PM.png](http://upload-images.jianshu.io/upload_images/1285005-b702c773cc131dd9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![Screen Shot 2015-12-07 at 1.07.11 PM.png](http://upload-images.jianshu.io/upload_images/1285005-1dd8de6cc3114504.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![Screen Shot 2015-12-07 at 1.10.46 PM.png](http://upload-images.jianshu.io/upload_images/1285005-2dd988ec25764d98.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
