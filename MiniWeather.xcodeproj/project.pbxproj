@@ -19,6 +19,9 @@
 		7FB124641C15086D00D22D6E /* SWRNetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB124611C15086D00D22D6E /* SWRNetworkOperation.swift */; };
 		7FB124671C1508AA00D22D6E /* WeeklyTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB124661C1508AA00D22D6E /* WeeklyTableTableViewController.swift */; };
 		7FB124691C15095A00D22D6E /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB124681C15095A00D22D6E /* BackgroundView.swift */; };
+		7FB125151C15F1FD00D22D6E /* SWRDailyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB125141C15F1FD00D22D6E /* SWRDailyWeather.swift */; };
+		7FB125171C15F39400D22D6E /* SWRIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB125161C15F39400D22D6E /* SWRIcon.swift */; };
+		7FB125191C15FA4B00D22D6E /* SWRForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB125181C15FA4B00D22D6E /* SWRForecast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		7FB124611C15086D00D22D6E /* SWRNetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWRNetworkOperation.swift; sourceTree = "<group>"; };
 		7FB124661C1508AA00D22D6E /* WeeklyTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeeklyTableTableViewController.swift; sourceTree = "<group>"; };
 		7FB124681C15095A00D22D6E /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		7FB125141C15F1FD00D22D6E /* SWRDailyWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWRDailyWeather.swift; sourceTree = "<group>"; };
+		7FB125161C15F39400D22D6E /* SWRIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWRIcon.swift; sourceTree = "<group>"; };
+		7FB125181C15FA4B00D22D6E /* SWRForecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWRForecast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +148,9 @@
 				7FB1245F1C15086D00D22D6E /* SWRCurrentWeather.swift */,
 				7FB124601C15086D00D22D6E /* SWRForecastService.swift */,
 				7FB124611C15086D00D22D6E /* SWRNetworkOperation.swift */,
+				7FB125141C15F1FD00D22D6E /* SWRDailyWeather.swift */,
+				7FB125161C15F39400D22D6E /* SWRIcon.swift */,
+				7FB125181C15FA4B00D22D6E /* SWRForecast.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -258,10 +267,13 @@
 				7FB1245D1C15086400D22D6E /* ViewController.swift in Sources */,
 				7F85B2561C11518700EE41ED /* AppDelegate.swift in Sources */,
 				7FB124641C15086D00D22D6E /* SWRNetworkOperation.swift in Sources */,
+				7FB125191C15FA4B00D22D6E /* SWRForecast.swift in Sources */,
 				7FB124691C15095A00D22D6E /* BackgroundView.swift in Sources */,
 				7FB124671C1508AA00D22D6E /* WeeklyTableTableViewController.swift in Sources */,
+				7FB125171C15F39400D22D6E /* SWRIcon.swift in Sources */,
 				7FB124621C15086D00D22D6E /* SWRCurrentWeather.swift in Sources */,
 				7FB124631C15086D00D22D6E /* SWRForecastService.swift in Sources */,
+				7FB125151C15F1FD00D22D6E /* SWRDailyWeather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

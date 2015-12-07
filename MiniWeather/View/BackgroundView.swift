@@ -13,7 +13,6 @@ class BackgroundView: UIView {
     
     override func drawRect(rect: CGRect) {
         let lightPurple: UIColor = UIColor(red: 0.377, green: 0.075, blue: 0.778, alpha: 1.000)
-//        let lightPurple: UIColor = UIColor(red: 74/255, green: 144/255, blue: 226/255, alpha: 1.000)
         let darkPurple: UIColor = UIColor(red: 0.060, green: 0.036, blue: 0.202, alpha: 1.000)
         
         let context = UIGraphicsGetCurrentContext()

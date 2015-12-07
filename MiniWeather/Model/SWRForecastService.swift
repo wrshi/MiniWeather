@@ -18,13 +18,13 @@ struct SWRForecastService {
         forecastBaseUrl = NSURL(string: "https://api.forecast.io/forecast/\(forecastAPIKey)/")
     }
     
-    func getForecast(lat: Double, long: Double, completion: (SWRCurrentWeather? -> Void)){
+    func getForecast(lat: Double, long: Double, completion: (SWRForecast? -> Void)){
         if let forecastURL = NSURL(string: "\(lat),\(long)", relativeToURL: forecastBaseUrl){
             let networkOperation = SWRNetworkOperation(url: forecastURL)
             networkOperation.downloadJSONFromURL(){
                 (let JSONDictionary) in
-                let currentWeather = self.currentWeatherFromJSON(JSONDictionary)
-                completion(currentWeather)
+                let forecast = SWRForecast(weatherDictionary: JSONDictionary)
+                completion(forecast)
             }
         }
         else{
@@ -32,15 +32,7 @@ struct SWRForecastService {
         }
     }
     
-    func currentWeatherFromJSON(JSONDictionary: [String: AnyObject]?) -> SWRCurrentWeather? {
-        if let currentWeatherDictionary = JSONDictionary?["currently"] as? [String: AnyObject]{
-            return SWRCurrentWeather(weatherDictionary: currentWeatherDictionary)
-        }
-        else{
-            println("KSON dictionary returned nil for 'currently' key")
-            return nil
-        }
-    }
+
 }
 
 

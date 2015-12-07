@@ -46,7 +46,7 @@
                                     <color key="textColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="↑63º↓39º" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRI-Yg-2bU">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="               " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRI-Yg-2bU">
                                     <rect key="frame" x="499" y="127" width="76" height="21"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
@@ -57,9 +57,9 @@
                             <constraints>
                                 <constraint firstAttribute="bottom" secondItem="Z15-qr-Zu9" secondAttribute="bottom" constant="2" id="9mY-Vb-Tul"/>
                                 <constraint firstAttribute="centerX" secondItem="apI-DI-b9f" secondAttribute="centerX" constant="-31.5" id="Bkk-id-wxb"/>
-                                <constraint firstItem="Z15-qr-Zu9" firstAttribute="leading" secondItem="JUj-Zf-2lt" secondAttribute="leading" constant="8" id="Gvt-v9-ImM"/>
+                                <constraint firstItem="Z15-qr-Zu9" firstAttribute="leading" secondItem="JUj-Zf-2lt" secondAttribute="leading" constant="15" id="Gvt-v9-ImM"/>
                                 <constraint firstAttribute="centerX" secondItem="OUa-0d-ibR" secondAttribute="centerX" id="Oel-rA-g10"/>
-                                <constraint firstAttribute="trailing" secondItem="HRI-Yg-2bU" secondAttribute="trailing" constant="25" id="RBK-g3-XFU"/>
+                                <constraint firstAttribute="trailing" secondItem="HRI-Yg-2bU" secondAttribute="trailing" constant="15" id="RBK-g3-XFU"/>
                                 <constraint firstItem="OUa-0d-ibR" firstAttribute="top" secondItem="apI-DI-b9f" secondAttribute="bottom" constant="10" id="gNU-fe-qKr"/>
                                 <constraint firstAttribute="centerX" secondItem="8qo-bW-b7C" secondAttribute="centerX" constant="30" id="gsI-Hb-9RV"/>
                                 <constraint firstAttribute="bottom" secondItem="HRI-Yg-2bU" secondAttribute="bottom" constant="2" id="lJ1-wH-5Pt"/>
@@ -68,7 +68,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="eFT-hj-nGH">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="eFT-hj-nGH">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eFT-hj-nGH" id="iEV-T8-Elv">
                                     <autoresizingMask key="autoresizingMask"/>
