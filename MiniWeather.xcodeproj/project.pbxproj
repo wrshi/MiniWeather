@@ -23,6 +23,7 @@
 		7FB125171C15F39400D22D6E /* SWRIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB125161C15F39400D22D6E /* SWRIcon.swift */; };
 		7FB125191C15FA4B00D22D6E /* SWRForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB125181C15FA4B00D22D6E /* SWRForecast.swift */; };
 		7FB1251B1C16088200D22D6E /* SWRDailyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB1251A1C16088200D22D6E /* SWRDailyCell.swift */; };
+		7FB1251D1C16129300D22D6E /* SWRDetailBackgoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB1251C1C16129300D22D6E /* SWRDetailBackgoundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		7FB125161C15F39400D22D6E /* SWRIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWRIcon.swift; sourceTree = "<group>"; };
 		7FB125181C15FA4B00D22D6E /* SWRForecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWRForecast.swift; sourceTree = "<group>"; };
 		7FB1251A1C16088200D22D6E /* SWRDailyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWRDailyCell.swift; sourceTree = "<group>"; };
+		7FB1251C1C16129300D22D6E /* SWRDetailBackgoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWRDetailBackgoundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 			children = (
 				7FB124681C15095A00D22D6E /* BackgroundView.swift */,
 				7FB1251A1C16088200D22D6E /* SWRDailyCell.swift */,
+				7FB1251C1C16129300D22D6E /* SWRDetailBackgoundView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				7FB124621C15086D00D22D6E /* SWRCurrentWeather.swift in Sources */,
 				7FB124631C15086D00D22D6E /* SWRForecastService.swift in Sources */,
 				7FB125151C15F1FD00D22D6E /* SWRDailyWeather.swift in Sources */,
+				7FB1251D1C16129300D22D6E /* SWRDetailBackgoundView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
