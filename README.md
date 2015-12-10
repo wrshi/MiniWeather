@@ -5,8 +5,8 @@
 截图长这样（不是没有别的图标而是Raincouver一直在下雨...）：   
 
 
-![Screen Shot 2015-12-07 at 1.07.11 PM.png](http://upload-images.jianshu.io/upload_images/1285005-1dd8de6cc3114504.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Alt img](demo/MiniWeather_Img1.png?raw=true "MiniWeather_homepage")
 
-![Screen Shot 2015-12-07 at 1.10.46 PM.png](http://upload-images.jianshu.io/upload_images/1285005-2dd988ec25764d98.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Alt img](demo/MiniWeather_Img2.png?raw=true "MiniWeather_detailpage")
 
 
